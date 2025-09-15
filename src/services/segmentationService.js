@@ -6,7 +6,7 @@ const Customer = require('../models/Customer');
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY || "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",
 });
 
 /**

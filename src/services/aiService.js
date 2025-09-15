@@ -9,7 +9,7 @@ const axios = require('axios');
  *   - "country equals US" => { field: 'country', operator: 'equals', value: 'US' }
  */
 exports.convertTextToRules = async (text) => {
-  const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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";
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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";
   const OPENAI_API_URL = process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions';
 
   if (!AI_API_KEY) {
