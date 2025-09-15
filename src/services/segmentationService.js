@@ -1,12 +1,10 @@
 const Segment = require('../models/Segment');
 const Customer = require('../models/Customer');
-// Note: The ruleEvaluator utility is no longer needed for the main segmentation
-// const ruleEvaluator = require('../utils/ruleEvaluator'); 
 
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 /**
