@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Backend System Architecture</text>
+  
+  <!-- MongoDB Atlas (Top) -->
+  <rect x="300" y="60" width="200" height="100" rx="8" fill="#e8f5e8" stroke="#4caf50" stroke-width="2"/>
+  <text x="400" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">MongoDB (Atlas)</text>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Customer, Orders,</text>
+  <text x="400" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Campaigns, Segments,</text>
+  <text x="400" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Logs, Users</text>
+  
+  <!-- Bidirectional arrow from MongoDB to Backend -->
+  <path d="M400 160 L400 200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  
+  <!-- Backend (Center/Bottom) -->
+  <rect x="150" y="350" width="500" height="120" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="3"/>
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Backend (Node.js / Express)</text>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Auth, Segments, Campaigns, CommunicationLogs</text>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Services + Controllers + Routes</text>
+  
+  <!-- AI Integration (Left) -->
+  <rect x="80" y="200" width="160" height="80" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="160" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">AI Integration</text>
+  <text x="160" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(OpenAI API etc.)</text>
+  
+  <!-- Vendor API (Center) -->
+  <rect x="320" y="200" width="160" height="80" rx="8" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+  <text x="400" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Vendor API</text>
+  <text x="400" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Simulated)</text>
+  
+  <!-- Google OAuth (Right) -->
+  <rect x="560" y="200" width="160" height="80" rx="8" fill="#fce4ec" stroke="#e91e63" stroke-width="2"/>
+  <text x="640" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Google OAuth</text>
+  <text x="640" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Passport JS)</text>
+  
+  <!-- Bidirectional arrows from services to backend -->
+  <!-- AI Integration to Backend -->
+  <path d="M160 280 L280 350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  
+  <!-- Vendor API to Backend -->
+  <path d="M400 280 L400 350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  
+  <!-- Google OAuth to Backend -->
+  <path d="M640 280 L520 350" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Data flow labels -->
+  <text x="420" y="185" font-family="Arial, sans-serif" font-size="9" fill="#666" font-style="italic">Data Storage &amp; Retrieval</text>
+  
+  <text x="200" y="320" font-family="Arial, sans-serif" font-size="9" fill="#666" font-style="italic">AI Services</text>
+  
+  <text x="420" y="320" font-family="Arial, sans-serif" font-size="9" fill="#666" font-style="italic">External APIs</text>
+  
+  <text x="580" y="320" font-family="Arial, sans-serif" font-size="9" fill="#666" font-style="italic">Authentication</text>
+  
+  <!-- Architecture Components Box -->
+  <rect x="50" y="500" width="700" height="80" fill="#f5f5f5" stroke="#ddd" stroke-width="1" rx="5"/>
+  <text x="60" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Core Backend Components:</text>
+  
+  <text x="60" y="540" font-family="Arial, sans-serif" font-size="10" fill="#666">• Authentication Service (Google OAuth integration)</text>
+  <text x="60" y="555" font-family="Arial, sans-serif" font-size="10" fill="#666">• Campaign Management (CRUD operations, scheduling)</text>
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="10" fill="#666">• Segment Management (Customer targeting)</text>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="10" fill="#666">• Communication Logs (Message tracking &amp; analytics)</text>
+  <text x="60" y="570" font-family="Arial, sans-serif" font-size="10" fill="#666">• AI Integration (Content generation, personalization)</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="10" fill="#666">• Vendor API Simulation (Testing &amp; development)</text>
+</svg>

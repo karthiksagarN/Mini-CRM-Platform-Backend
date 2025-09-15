@@ -1,20 +1,3 @@
-// const authService = require('../services/authService');
-
-// exports.handleGoogleCallback = async (req, res, next) => {
-//   try {
-//     // Passport attached user to req.user
-//     const user = req.user;
-//     if (!user) {
-//       return res.status(401).json({ error: 'User not authenticated' });
-//     }
-//     const token = authService.generateJWT(user);
-//     // For convenience return JSON with token
-//     res.json({ token });
-//   } catch (err) {
-//     next(err);
-//   }
-// };
-
 const authService = require('../services/authService');
 
 exports.handleGoogleCallback = async (req, res, next) => {

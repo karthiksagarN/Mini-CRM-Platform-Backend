@@ -8,7 +8,7 @@ const vendorService = require('./vendorService');
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  apiKey:"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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 /**

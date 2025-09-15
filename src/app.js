@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,7 +10,6 @@ const segmentRoutes = require('./routes/segmentRoutes');
 const campaignRoutes = require('./routes/campaignRoutes');
 const communicationLogRoutes = require('./routes/communicationLogRoutes');
 const aiRoutes = require('./routes/aiRoutes');
-require("dotenv").config();
 
 const app = express();
 
