@@ -36,4 +36,4 @@ This repository is a backend system for campaign management built with Node.js, 
 
 1. Clone the repo and install dependencies:
 
-   
+   # Mini-CRM-Platform-Backend
